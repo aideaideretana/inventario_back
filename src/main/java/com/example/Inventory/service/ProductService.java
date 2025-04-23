@@ -68,8 +68,8 @@ public class ProductService {
             returnedProduct.setCategory(product.getCategory());
         }
         
-        if(product.getGroup() != null){
-            returnedProduct.setGroup(product.getGroup());
+        if(product.getTeams() != null){
+            returnedProduct.setTeams(product.getTeams());
         }
 
             returnedProduct.setFavorite(product.isFavorite());

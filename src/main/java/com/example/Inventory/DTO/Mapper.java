@@ -12,13 +12,13 @@ public class Mapper {
         product.setQuantity(productRequest.quantity());
         product.setDescription(productRequest.description());
         product.setCategory(productRequest.category());
-        product.setGroup(productRequest.group());
+        product.setTeams(productRequest.teams());
         product.setFavorite(productRequest.favorite());
         return product;
     }
 
     public static ProductResponse toProductResponse(Product product){
-       return new ProductResponse(product.getId(), product.getName(), product.getQuantity(), product.getPrice(), product.getDescription(),product.getCategory(),product.getGroup(),product.isFavorite());
+       return new ProductResponse(product.getId(), product.getName(), product.getQuantity(), product.getPrice(), product.getDescription(),product.getCategory(),product.getTeams(),product.isFavorite());
     }
 
 }

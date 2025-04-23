@@ -72,10 +72,7 @@ public class ProductService {
             returnedProduct.setGroup(product.getGroup());
         }
 
-        if(product.isFavorite() != null){
             returnedProduct.setFavorite(product.isFavorite());
-        }
-        
         
         return this.productRepository.save(returnedProduct);
     }

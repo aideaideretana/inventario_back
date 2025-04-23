@@ -11,11 +11,14 @@ public class Mapper {
         product.setPrice(productRequest.price());
         product.setQuantity(productRequest.quantity());
         product.setDescription(productRequest.description());
+        product.setCategory(productRequest.category());
+        product.setGroup(productRequest.group());
+        product.setFavorite(productRequest.favorite());
         return product;
     }
 
     public static ProductResponse toProductResponse(Product product){
-       return new ProductResponse(product.getId(), product.getName(), product.getQuantity(), product.getPrice(), product.getDescription());
+       return new ProductResponse(product.getId(), product.getName(), product.getQuantity(), product.getPrice(), product.getDescription(),product.getCategory(),product.getGroup(),product.isFavorite());
     }
 
 }

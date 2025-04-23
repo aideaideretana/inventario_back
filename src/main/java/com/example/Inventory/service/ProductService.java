@@ -63,6 +63,19 @@ public class ProductService {
         if(product.getQuantity() != null){
             returnedProduct.setQuantity(product.getQuantity());
         }
+
+        if(product.getCategory() != null){
+            returnedProduct.setCategory(product.getCategory());
+        }
+        
+        if(product.getGroup() != null){
+            returnedProduct.setGroup(product.getGroup());
+        }
+
+        if(product.isFavorite() != null){
+            returnedProduct.setFavorite(product.isFavorite());
+        }
+        
         
         return this.productRepository.save(returnedProduct);
     }

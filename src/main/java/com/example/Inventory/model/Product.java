@@ -33,12 +33,23 @@ public class Product {
 
     private String description;
 
+    @NotNull
+    private String category;
 
-    public Product(String name, Integer quantity, Double price, String description){
+    @NotNull
+    private String group;
+
+    private boolean favorite;
+
+
+    public Product(String name, Integer quantity, Double price, String description,String category,String group,boolean favorite){
         this.name = name;
         this.quantity = quantity;
         this.price = price;
         this.description = description;
+        this.category=category;
+        this.group=group;
+        this.favorite=favorite;
     }
 
 

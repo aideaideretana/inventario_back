@@ -32,6 +32,8 @@ import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 
+//Controller: exponer el servicio 
+
 @Tag(name = "Inventory", description = "JWT Spring Boot API")
 @RestController
 @RequestMapping("/product")

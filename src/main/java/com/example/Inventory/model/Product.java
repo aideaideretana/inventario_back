@@ -34,6 +34,9 @@ public class Product {
     private String description;
 
 
+
+    
+
     public Product(String name, Integer quantity, Double price, String description){
         this.name = name;
         this.quantity = quantity;
